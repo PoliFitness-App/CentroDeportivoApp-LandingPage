@@ -1,13 +1,116 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/public/styles.css" rel="stylesheet">
+
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="/src/index.js"></script>
+
 </head>
+
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+
+  <header class="bg-white font-sans z--10 sticky">
+
+    <nav class="mx-auto flex max-w-5xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+
+      <div class="flex lg:flex-1 py-5">
+
+        <a href="#" class="lg:flex lg:gap-x-6 justify-center">
+
+          <img class="h-16 w-14" src="../src/img/uca.svg" alt="UCA logo">
+
+          <span class="font-semibold text-xl py-5">PoliFitness <span class=" text-primary"> App </span> </span>
+
+        </a>
+
+      </div>
+
+      <div class="hidden lg:flex lg:gap-x-12">
+
+        <a href="#1"
+          class="text-base leading-6 hover:underline-offset-8 hover:underline hover:transition ease-in-out delay-150 hover:scale-110 duration-300 hover:text-primary" ">Quienes somos</a>
+        <a href=" #2"  
+          class="text-base leading-6 hover:underline-offset-8 hover:underline hover:transition ease-in-out delay-150 hover:scale-110 duration-300 hover:text-primary">Funciones</a>
+
+      </div>
+
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+
+        <button type="button"
+          class=" bg-primary text-secondary hover:bg-ternary hover:transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 ">
+          Descarga la App
+        </button>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <section class="mx-auto flex max-w-7xl items-center delay-[400ms] duration-[600ms] taos:translate-x-[-200px] taos:opacity-0" data-taos-offset="500">
+
+    <div class="flex-col justify-between mr-20 w-2/4">
+
+      <p class="text-4xl my-10">
+        La buena salud comienza con un buen <span class="text-primary">entrenamiento</span>
+      </p>
+
+      <hr class="w-10 bg-primary h-1 rounded my-10">
+
+      <p class="text-xl my-10">
+        ¿Quieres mejorar tu salud física? PoliFitnessApp te brinda rutinas personalizadas y seguimiento de tus medidas.
+      </p>
+
+      <img class="cursor-pointer hover:transition ease-in-out delay-150 hover:scale-110 duration-300 my-5"
+        src="../src/img/download on....png">
+
+    </div>
+
+    <div class="w-2/4">
+
+      <img class="max-w-max" src="../src/img/mobilApp.svg" alt="app mobil app">
+
+    </div>
+
+
+  </section>
+
+  <section class="mx-auto flex max-w-7xl items-center h-screen delay-[1000ms] duration-[600ms] taos:translate-x-[200px] taos:opacity-0 will-change-scroll" data-taos-offset="400">
+    
+    <div class="w-2/4 mr-20">
+
+      <img class="max-w-max" src="../src/img/lady.png" alt="app mobil app">
+    </div>
+
+    <div class="flex-col justify-between mr-20 w-2/4">
+
+      <p class="text-lg my-10 text-quaternary tracking-widest " id="2">
+        FUNCIONES
+      </p>
+
+      <p class="text-4xl my-10">
+        Rutinas diarias con <span class="text-primary"> PoliFitness </span>
+      </p>
+
+      <hr class="w-10 bg-primary h-1 rounded my-10">
+
+      <p class="text-xl my-10">
+        ¿Quieres mejorar tu salud física? PoliFitnessApp te brinda rutinas personalizadas y seguimiento de tus medidas.
+      </p>
+
+      <img class="cursor-pointer hover:transition ease-in-out delay-150 hover:scale-110 duration-300 my-5"
+        src="../src/img/download on....png">
+
+    </div>
+
+
+  </section>
+
+  <script src="https://unpkg.com/taos@1.0.3/dist/taos.js"></script>
+
 </body>
 </html>
