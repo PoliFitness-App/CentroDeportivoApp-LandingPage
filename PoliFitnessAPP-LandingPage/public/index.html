@@ -13,6 +13,8 @@
 
 <body>
 
+  <!---- HEADER ---->
+
   <header class="bg-white font-sans z--10 sticky">
 
     <nav class="mx-auto flex max-w-5xl items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -51,6 +53,8 @@
 
   </header>
 
+  <!---- SECTION 1 ---->
+
   <section
     class="mx-auto flex max-w-7xl items-center delay-[400ms] duration-[600ms] taos:translate-x-[-200px] taos:opacity-0"
     data-taos-offset="500">
@@ -87,12 +91,12 @@
     class="mx-auto flex max-w-7xl items-center h-screen delay-[1000ms] duration-[600ms] taos:translate-x-[200px] taos:opacity-0 will-change-scroll"
     data-taos-offset="400">
 
-    <div class="w-2/4 mr-20">
+    <div class="w-2/4 h-fit">
 
-      <img class="max-w-max" src="../src/img/lady.png" alt="app mobil app">
+      <img width="624px" height="750" class="" src="../src/img/lady.png" alt="app mobil app">
     </div>
 
-    <div class="flex-col justify-between mr-20 w-2/4">
+    <div class="flex-col justify-between w-2/3 pl-60">
 
       <p class=" text-lg my-10 text-quaternary tracking-widest " id="2">
         FUNCIONES
@@ -107,11 +111,11 @@
 
       <!---- REGISTRATE ---->
 
-      <div class="flex flex-nowrap justify-center my-4">
+      <div class="flex flex-nowrap justify-center my-4 ">
 
-        <img src="/src/img/caloriesIcon.png" alt="" class="w-16 h-16 my-4 mr-2">
+        <img src="/src/img/caloriesIcon.png" alt="" class="w-16 h-16 my-4 mr-2 animate-bounce">
 
-        <div class="">
+        <div class="pl-5">
 
           <p class="my-2 font-bold text-lg">
             Regístrate
@@ -129,9 +133,9 @@
 
       <div class="flex flex-nowrap justify-center my-4">
 
-        <img src="/src/img/profileIcon.png" alt="" class="w-16 h-16 my-4 mr-2">
+        <img src="/src/img/profileIcon.png" alt="" class="w-16 h-16 my-4 mr-2 animate-bounce">
 
-        <div class="">
+        <div class="pl-5">
 
           <p class="my-2 font-bold text-lg">
             Configura tu perfil
@@ -149,9 +153,9 @@
 
       <div class="flex flex-nowrap justify-center my-4">
 
-        <img src="/src/img/rutinesIcon.png" alt="" class="w-16 h-16 my-4 mr-2">
+        <img src="/src/img/rutinesIcon.png" alt="" class="w-16 h-16 my-4 mr-2 animate-bounce">
 
-        <div class="">
+        <div class="pl-5">
 
           <p class="my-2 font-bold text-lg">
             Rutinas personalizadas
@@ -165,13 +169,13 @@
 
       </div>
 
-      <!---- CALCULADORA IMC ---->
+      <!---- RUTINAS PERSONALIZADAS ---->
 
-      <div class="flex flex-nowrap justify-center my-4">
+      <div class="flex flex-nowrap justify-center my-4 w-3/4">
 
-        <img src="/src/img/calculatorIcon.png" alt="" class="w-16 h-16 my-4 mr-2">
+        <img src="/src/img/calculatorIcon.png" alt="" class="w-16 h-16 my-4 mr-2 animate-bounce">
 
-        <div class="">
+        <div class="pl-5">
 
           <p class="my-2 font-bold text-lg">
             Calculadora IMC
@@ -194,9 +198,74 @@
 
   <!---- SECTION 3 ---->
 
+  <section
+    class="mx-auto mt-28 flex max-w-7xl items-center h-screen delay-[1000ms] duration-[600ms] taos:translate-x-[200px] taos:opacity-0 will-change-scroll"
+    data-taos-offset="400">
+
+    <div class="flex-col w-7/12 pl-16">
+
+      <p class=" text-lg my-10 text-quaternary tracking-widest " id="2">
+        RUTINAS
+      </p>
+
+      <p class="leading-relaxed text-4xl my-10">
+        Rutinas diarias<span class="text-primary"> Personalizadas </span>
+      </p>
+
+      <hr class="w-12 bg-primary h-1 rounded my-10">
+
+      <p class="my-2 font-light ">
+        No te preocupes si tienes dificultad en recordar por cual <br>parte de la rutina te quedaste, nosotros hacemos
+        ese <br>trabajo por ti!
+      </p>
+
+      <!---- PRIMERO ---->
+
+      <div class="flex flex-nowrap items-center">
+
+        <img src="/src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
+
+        <p class="font-light w-1/2 ">
+          Numerosas rutinas de ejercicios.
+        </p>
+
+      </div>
+
+      <!---- SEGUNDO ---->
+
+      <div class="flex flex-nowrap items-center">
+
+        <img src="/src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
+
+        <p class="font-light w-1/2 ">
+          Hechas para todo los niveles.
+        </p>
+
+      </div>
+
+      <!---- TERCERO ---->
+
+      <div class="flex flex-nowrap items-center">
+
+        <img src="/src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
+
+        <p class="font-light w-1/2 ">
+          Personalizadas para alcanzar tu objetivo.
+        </p>
+
+      </div>
+
+      
+
+    </div>
+
+    <div class="w-2/4">
+      <img class="max-w-max max-h-screen" src="../src/img/Rutinas.png" alt="app mobil app">
+    </div>
 
 
-  
+  </section>
+
 
   <script src="https://unpkg.com/taos@1.0.3/dist/taos.js"></script>
 
