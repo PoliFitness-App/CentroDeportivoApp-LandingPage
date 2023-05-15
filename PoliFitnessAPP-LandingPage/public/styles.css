@@ -530,6 +530,10 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .sticky {
   position: sticky;
 }
@@ -748,6 +752,11 @@ html {
 
 .translate-x-\[200px\] {
   --tw-translate-x: 200px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[100\%\] {
+  --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1020,6 +1029,22 @@ html {
   transition-delay: 400ms;
 }
 
+.delay-\[300ms\] {
+  transition-delay: 300ms;
+}
+
+.delay-\[500ms\] {
+  transition-delay: 500ms;
+}
+
+.delay-\[700ms\] {
+  transition-delay: 700ms;
+}
+
+.delay-\[2000ms\] {
+  transition-delay: 2000ms;
+}
+
 .\!duration-\[0ms\] {
   transition-duration: 0ms !important;
 }
@@ -1038,6 +1063,14 @@ html {
 
 .will-change-scroll {
   will-change: scroll-position;
+}
+
+.will-change-contents {
+  will-change: contents;
+}
+
+.will-change-auto {
+  will-change: auto;
 }
 
 .hover\:-translate-y-1:hover {
