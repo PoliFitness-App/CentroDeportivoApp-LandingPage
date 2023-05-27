@@ -5,30 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  
-  <link href="/public/styles.css" rel="stylesheet">
+
+  <link href="./styles.css" rel="stylesheet">
 
   <script>document.documentElement.classList.add('js')</script>
-  <script src="/src/index.js"></script>
 
 </head>
 
-<body>
-
+<body class="font-sans lg:px-36 ">
 
   <!---- HEADER ---->
 
-  <header class="bg-white font-sans z--10 sticky">
+  <header class="bg-white font-sans z-10 sticky">
 
-    <nav class="mx-auto flex max-w-5xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <nav class="mx-auto sticky z-10 flex max-w-5xl items-center justify-between p-6 lg:px-8" aria-label="Global">
 
-      <div class="flex lg:flex-1 py-5">
+      <div class=" hidden lg:flex justify-center md:pl-24 md:items-center md:justify-center lg:flex-1 py-5">
 
-        <a href="#" class="lg:flex lg:gap-x-6 justify-center">
+        <a href="#" class="lg:flex lg:gap-x-6 justify-center pt-2">
 
           <img class="h-16 w-14" src="../src/img/uca.svg" alt="UCA logo">
 
-          <span class="font-semibold text-xl py-5">PoliFitness <span class=" text-primary"> App </span> </span>
+          <span class="font-semibold text-base py-5 pr-20">CentroDeportivo <span class=" text-primary"> App <span>
+              </span>
 
         </a>
 
@@ -36,7 +35,7 @@
 
       <div class="hidden lg:flex lg:gap-x-12">
 
-        <a href="#1"
+        <a href="#6"
           class="text-base leading-6 hover:underline-offset-8 hover:underline hover:transition ease-in-out delay-150 hover:scale-110 duration-300 hover:text-primary" ">Quienes somos</a>
         <a href=" #2"
           class="text-base leading-6 hover:underline-offset-8 hover:underline hover:transition ease-in-out delay-150 hover:scale-110 duration-300 hover:text-primary">Funciones</a>
@@ -59,19 +58,20 @@
   <!---- SECTION 1 ---->
 
   <section
-    class="mx-auto flex max-w-7xl items-center delay-[700ms] duration-[600ms] taos:translate-x-[-200px] taos:opacity-0 will-change-scroll"
-    data-taos-offset="500">
+    class="container mx-auto flex flex-col lg:flex-row px-20 justify-center items-center min-h-screen delay-[500ms] duration-[600ms] taos:translate-x-[200px] taos:opacity-0 will-change-scroll"
+    data-taos-offset="400">
 
-    <div class="flex-col justify-between mr-20 w-2/4">
+    <div class="flex-col justify-between lg:w-2/4 lg:mr-10">
 
-      <p class="text-4xl my-10">
+      <p class="text-4xl my-10 lg:w-2/4">
         La buena salud comienza con un buen <span class="text-primary">entrenamiento</span>
       </p>
 
       <hr class="w-10 bg-primary h-1 rounded my-10">
 
-      <p class="text-xl my-10">
-        ¿Quieres mejorar tu salud física? PoliFitnessApp te brinda rutinas personalizadas y seguimiento de tus medidas.
+      <p class="text-xl my-10 max-w-xl">
+        ¿Quieres mejorar tu salud física? CentroDeportivo App te brinda rutinas personalizadas y seguimiento de tus
+        medidas.
       </p>
 
       <img class="cursor-pointer hover:transition ease-in-out delay-150 hover:scale-110 duration-300 my-5"
@@ -79,34 +79,34 @@
 
     </div>
 
-    <div class="w-2/4">
+    <div class="flex justify-center items-center lg:w-3/4">
 
-      <img class="max-w-max" src="../src/img/mobilApp.svg" alt="app mobil app">
+      <img class="object-cover md:object-scale-down" src="../src/img/mobilApp.svg" alt="app mobil">
 
     </div>
-
 
   </section>
 
   <!---- SECTION 2 ---->
 
   <section
-    class="mx-auto flex max-w-7xl items-center h-screen delay-[2000ms] duration-[600ms] taos:translate-x-[200px] taos:opacity-0 will-change-auto"
+    class="container mx-auto flex flex-col lg:flex-row px-20 justify-center items-center min-h-screen delay-[500ms] duration-[600ms] taos:translate-x-[200px] taos:opacity-0 will-change-scroll"
     data-taos-offset="400">
 
-    <div class="w-2/4 h-fit">
+    <div class="flex justify-center items-center lg:w-3/4 lg:p-20">
 
-      <img width="624px" height="750" class="" src="../src/img/lady.png" alt="app mobil app">
+      <img class="object-cover md:object-scale-down" src="../src/img/lady_phone.svg" alt="app mobil app">
+
     </div>
 
-    <div class="flex-col justify-between w-2/3 pl-60">
+    <div class="flex flex-col lg:w-1/2">
 
       <p class=" text-lg my-10 text-quaternary tracking-widest " id="2">
         FUNCIONES
       </p>
 
       <p class="leading-relaxed text-4xl my-10">
-        Explora PoliFitness <span class="text-primary font-bold"> App</span>
+        Explora CentroDeportivo <span class="text-primary font-bold"> App</span>
       </p>
 
       <hr class="w-12 bg-primary h-1 rounded my-10">
@@ -116,7 +116,7 @@
 
       <div class="flex flex-nowrap justify-center my-4 ">
 
-        <img src="/src/img/caloriesIcon.png" alt="" class="w-16 h-16 my-4 mr-2 animate-bounce">
+        <img src="../src/img/caloriesIcon.png" alt="" class="w-16 h-16 my-4 mr-2 animate-bounce">
 
         <div class="pl-5">
 
@@ -125,7 +125,7 @@
 
           </p>
           <p class="my-2 font-light ">
-            Crea una cuenta e inicia sesión para mantenerse actualizado en la plataforma de PoliFitness.
+            Crea una cuenta e inicia sesión para mantenerse actualizado en la plataforma de CentroDeportivo App.
           </p>
 
         </div>
@@ -136,7 +136,7 @@
 
       <div class="flex flex-nowrap justify-center my-4">
 
-        <img src="/src/img/profileIcon.png" alt="" class="w-16 h-16 my-4 mr-2 animate-bounce">
+        <img src="../src/img/profileIcon.png" alt="" class="w-16 h-16 my-4 mr-2 animate-bounce">
 
         <div class="pl-5">
 
@@ -156,7 +156,7 @@
 
       <div class="flex flex-nowrap justify-center my-4">
 
-        <img src="/src/img/rutinesIcon.png" alt="" class="w-16 h-16 my-4 mr-2 animate-bounce">
+        <img src="../src/img/rutinesIcon.png" alt="" class="w-16 h-16 my-4 mr-2 animate-bounce">
 
         <div class="pl-5">
 
@@ -165,7 +165,7 @@
 
           </p>
           <p class="my-2 font-light ">
-            Crea una cuenta e inicia sesión para mantenerse actualizado en la plataforma de PoliFitness.
+            Crea una cuenta e inicia sesión para mantenerse actualizado en la plataforma de CentroDeportivo App.
           </p>
 
         </div>
@@ -176,7 +176,7 @@
 
       <div class="flex flex-nowrap justify-center my-4 w-3/4">
 
-        <img src="/src/img/calculatorIcon.png" alt="" class="w-16 h-16 my-4 mr-2 animate-bounce">
+        <img src="../src/img/calculatorIcon.png" alt="" class="w-16 h-16 my-4 mr-2 animate-bounce">
 
         <div class="pl-5">
 
@@ -202,10 +202,10 @@
   <!---- SECTION 3 ---->
 
   <section
-    class="mx-auto mt-28 flex max-w-7xl items-center h-screen delay-[1000ms] duration-[600ms] taos:translate-x-[200px] taos:opacity-0 will-change-scroll"
+    class="container mx-auto flex flex-col lg:flex-row px-20 justify-center items-center min-h-screen delay-[500ms] duration-[600ms] taos:translate-x-[200px] taos:opacity-0 will-change-scroll"
     data-taos-offset="400">
 
-    <div class="flex-col w-7/12 pl-16">
+    <div class="flex-col lg:w-7/12 lg:pl-16">
 
       <p class=" text-lg my-10 text-quaternary tracking-widest " id="2">
         RUTINAS
@@ -226,7 +226,7 @@
 
       <div class="flex flex-nowrap items-center">
 
-        <img src="/src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
+        <img src="../src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
 
         <p class="font-light w-1/2 ">
           Numerosas rutinas de ejercicios.
@@ -238,7 +238,7 @@
 
       <div class="flex flex-nowrap items-center">
 
-        <img src="/src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
+        <img src="../src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
 
         <p class="font-light w-1/2 ">
           Hechas para todo los niveles.
@@ -250,7 +250,7 @@
 
       <div class="flex flex-nowrap items-center">
 
-        <img src="/src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
+        <img src="../src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
 
         <p class="font-light w-1/2 ">
           Personalizadas para alcanzar tu objetivo.
@@ -258,12 +258,12 @@
 
       </div>
 
-      
-
     </div>
 
-    <div class="w-2/4">
-      <img class="max-w-max max-h-screen" src="../src/img/Rutinas.png" alt="app mobil app">
+    <div class="flex justify-center items-center w-3\/4">
+
+      <img class="object-cover md:object-scale-down" src="../src/img/Rutinas.svg" alt="app mobil app">
+
     </div>
 
 
@@ -273,303 +273,247 @@
   <!---- SECTION 4 ---->
 
   <section
-  class="mx-auto mt-28 flex max-w-7xl items-center h-screen delay-[1000ms] duration-[600ms] taos:translate-x-[200px] taos:opacity-0 will-change-scroll"
-  data-taos-offset="400">
+    class="container mx-auto flex flex-col lg:flex-row px-20 justify-center items-center min-h-screen delay-[500ms] duration-[600ms] taos:translate-x-[200px] taos:opacity-0 will-change-scroll"
+    data-taos-offset="400">
 
-  <div class="flex-col w-7/12 pl-16">
+    <div class="flex-col lg:w-7/12">
 
-    <p class=" text-lg my-10 text-quaternary tracking-widest " id="2">
-      NOTICIAS
-    </p>
-
-    <p class="leading-relaxed text-4xl my-10">
-      Mantente<span class="text-primary"> Actualizado! </span>
-    </p>
-
-    <hr class="w-12 bg-primary h-1 rounded my-10">
-
-    <p class="my-2 font-light ">
-      Con PoliFitness <span class="font-bold text-primary" > App </span> puedes estar al tanto de todos los juegos<br> de tus equipos favoritos, nunca más te perderás otro juego.
-    </p>
-
-    <!---- PRIMERO ---->
-
-    <div class="flex flex-nowrap items-center">
-
-      <img src="/src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
-
-      <p class="font-light w-1/2 ">
-        Noticias sobre futuros juegos.
+      <p class=" text-lg my-10 text-quaternary tracking-widest " id="2">
+        NOTICIAS
       </p>
+
+      <p class="leading-relaxed text-4xl my-10">
+        Mantente<span class="text-primary"> Actualizado! </span>
+      </p>
+
+      <hr class="w-12 bg-primary h-1 rounded my-10">
+
+      <p class="my-2 font-light ">
+        Con CentroDeportivo <span class="font-bold text-primary"> App </span> puedes estar al tanto de todos los
+        juegos<br>
+        de tus equipos favoritos, nunca más te perderás otro juego.
+      </p>
+
+      <!---- PRIMERO ---->
+
+      <div class="flex flex-nowrap items-center">
+
+        <img src="../src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
+
+        <p class="font-light w-1/2 ">
+          Noticias sobre futuros juegos.
+        </p>
+
+      </div>
+
+      <!---- SEGUNDO ---->
+
+      <div class="flex flex-nowrap items-center">
+
+        <img src="../src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
+
+        <p class="font-light w-1/2 ">
+          Resultados de juegos.
+        </p>
+
+      </div>
+
+      <!---- TERCERO ---->
+
+      <div class="flex flex-nowrap items-center">
+
+        <img src="../src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
+
+        <p class="font-light w-1/2 ">
+          Filtra por tu deporte favorito.
+        </p>
+
+      </div>
 
     </div>
 
-    <!---- SEGUNDO ---->
-
-    <div class="flex flex-nowrap items-center">
-
-      <img src="/src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
-
-      <p class="font-light w-1/2 ">
-        Resultados de juegos.
-      </p>
-
+    <div class="flex justify-center items-center w-3\/4">
+      <img class="object-fit md:object-scale-down" src="../src/img/Noticias.svg" alt="app mobil app">
     </div>
 
-    <!---- TERCERO ---->
 
-    <div class="flex flex-nowrap items-center">
-
-      <img src="/src/img/calories-calculator 2.png" alt="" class="w-16 h-16 my-4 mr-2">
-
-      <p class="font-light w-1/2 ">
-        Filtra por tu deporte favorito.
-      </p>
-
-    </div>
-
-    
-
-  </div>
-
-  <div class="w-2/4">
-    <img class="max-w-max max-h-screen" src="../src/img/news.png" alt="app mobil app">
-  </div>
-
-
-</section>
-<!-- Section 5 IMC Calculator-->
-
-      <section class="flex flex-col bg-white min-h-screen">
-
-    
-        <!--  content-->
-        <div class="flex-col justify-between mr-20 w-2/4">
-          <div class="flex-col justify-between w-2/3 pl-60">
-      
-
-            <p class=" text-lg my-10 text-quaternary tracking-widest ">
-              CALCULADORA IMC
-            </p>
-      
-            <p class="text-3xl my-10">
-              Calcula tu <span class="text-gray-200"> IMC </span> fácil y rápido 
-            </p>
-
-            <hr class="w-10 bg-black h-1 rounded my-10">
-
-
-          </div>
-        </div>
-        
-        <div class="container px-6 py-0 mx-auto">
-        <div class="grid grid-cols-1 gap-0 mt-2 md:mt-1 md:grid-cols-2">
-
-          <div class="lg:flex items-center justify-center">
-            <img class="h-20 w-20" src="../src/img/Group 868.png" alt="ICC image">
-
-            <div class="flex flex-col justify-center py-20 lg:mx-6">
-                <p href="#" class="text-xl font-semibold text-gray-800 ">
-                    IMC
-                </p>
-                <p> Calcula tu índice de masa corporal </p>
-                <P>y estima la cantidad de grasa corporal.</p>
-                
-                
-            </div>
-        </div>
-
-          <div class="lg:flex items-center justify-center">
-            <img class="h-20 w-20" src="../src/img/Group 868.png" alt="ICC image">
-
-            <div class="flex flex-col justify-center py-20 lg:mx-6">
-                <p href="#" class="text-xl font-semibold text-gray-800 ">
-                    ICC
-                </p>
-                <p> Con PoliFitness también puedes</p>
-                <P>calcular el índice de cintura-cadera. </p>
-                
-                
-            </div>
-        </div>
-
-        </div>
-        </div>
-
-        
-
-       <div class="lg:flex items-center justify-center ">
-        <img class="h-82 rounded-lg lg:w-100" src="../src/img/Group 1000004724 1.png">
-       </div>
-    
-        
-    
   </section>
 
-      <!-- Section 6: Team cards -->
+  <!-- Section 5 IMC Calculator-->
 
-  <section class="flex flex-col bg-white min-h-screen " id="6">
+  <section
+    class="container mx-auto flex flex-col px-20 justify-center items-center min-h-screen delay-[500ms] duration-[600ms] taos:translate-x-[200px] taos:opacity-0 will-change-scroll"
+    data-taos-offset="400">
 
-    
-        <!--  content-->
-        <div class="flex-col justify-between mr-20 w-2/4">
-          <div class="flex-col justify-between w-2/3 pl-60">
-      
 
-            <p class=" text-lg my-10 text-quaternary tracking-widest ">
-              QUIÉNES SOMOS
+    <!--  content-->
+    <div class="flex-col justify-between lg:px-20 lg:w-2/4 self-start">
+
+      <p class=" text-lg  my-10 text-quaternary tracking-widest ">
+        CALCULADORA IMC
+      </p>
+
+      <p class="text-3xl my-10">
+        Calcula tu <span class="text-gray-200"> IMC </span> fácil y rápido
+      </p>
+
+      <hr class="w-12 bg-primary h-1 rounded my-10">
+
+    </div>
+
+    <div class="px-2 mx-auto  md:h-56 py-5">
+
+      <div class="flex lg:flex-row flex-col gap-x-20 py-5">
+
+        <div class="flex items-center justify-center gap-x-5 lg:max-h-24">
+
+          <img class="h-20 w-20 md:object-scale-down" src="../src/img/Group 868.png" alt="ICC image">
+
+          <div class="flex flex-col justify-center py-10 lg:mx-6">
+            <p href="#" class="text-xl font-semibold ">
+              IMC
             </p>
-      
-            <p class="text-4xl my-10">
-              Nuestro<span class="text-gray-200"> equipo </span>
-            </p>
-
-      
-            <hr class="w-10 bg-black h-1 rounded my-10">
-
-
-          </div>
-          
-        </div>
-
-        <!-- Team cards -->
-        <div
-            class="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-12  md:space-y-0 justify-center items-center mt-10">
-
-                <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
-                    <img src="../src/img/Preview.png" class="w-22">
-                    <div class="my-10 text-center">
-                        <span class="font-light text-sm justify-center">Fernando</span>
-                        <span class="font-light text-sm justify-center">Figueroa</span>
-                    </div>
-
-
-                </div>
-
-
-                <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
-                  <img src="../src/img/Preview(1).png" class="w-22">
-                  <div class="my-10 text-center">
-                      <span class="font-light text-sm justify-center">Diego</span>
-                      <span class="font-light text-sm justify-center">Viana</span>
-                  </div>
-
-
-              </div>
-
-
-              <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
-                <img src="../src/img/Preview(2).png" class="w-22">
-                <div class="my-10 text-center">
-                    <span class="font-light text-sm justify-center">Ricardo</span>
-                    <span class="font-light text-sm justify-center">López</span>
-                </div>
-
-
-            </div>
-
-            <div class="flex flex-col p-8 rounded-xl bg-white shadow-xl translate-x-4 translate-y-4 w-96 md:w-auto">
-              <img src="../src/img/Cute Avatar.png" class="w-22">
-              <div class="my-10 text-center">
-                  <span class="font-light text-sm justify-center">Pamela</span>
-                  <span class="font-light text-sm justify-center">Gomez</span>
-              </div>
-
+            <p> Calcula tu índice de masa corporal </p>
+            <P>y estima la cantidad de grasa corporal.</p>
 
           </div>
         </div>
 
+        <div class="flex items-center justify-center gap-x-5 lg:max-h-24">
 
-        
-    
+          <img class="h-20 w-20 md:object-scale-down" src="../src/img/Group 868.png" alt="ICC image">
+
+          <div class="flex flex-col justify-center py-10 lg:mx-6">
+            <p href="#" class="text-xl font-semibold">
+              ICC
+            </p>
+            <p>Con CentroDeportivo App también puedes</p>
+            <P>calcular el índice de cintura-cadera. </p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center">
+      <img width="60%" height="60%" class="object-cover md:object-scale-down" src="../src/img//lady_icc.svg"
+        alt="app mobil app">
+    </div>
+
+  </section>
+
+  <!-- Section 6: Team cards -->
+  <section
+    class="flex flex-col bg-white pb-32 delay-[500ms] duration-[600ms] taos:translate-x-[200px] taos:opacity-0 will-change-scroll"
+    data-taos-offset="400" id="6">
+
+
+    <!--  content-->
+    <div class="flex-col lg:ml-20 justify-between px-20 w-2/4 self-start">
+
+      <p class=" text-lg my-10 text-quaternary tracking-widest ">
+        QUIÉNES SOMOS
+      </p>
+
+      <p class="text-4xl my-10">
+        Nuestro<span class="text-gray-200"> equipo </span>
+      </p>
+
+      <hr class="w-12 bg-primary h-1 rounded my-10">
+
+    </div>
+
+    <!-- Team cards -->
+    <div
+      class="flex flex-col md:flex-row space-x-0 md:space-x-8 space-y-12 md:space-y-0 justify-center items-center mt-10">
+
+      <div
+        class="flex flex-col p-8 rounded-xl bg-white shadow-xl max-w-96 md:w-auto transition duration-300 ease-in-out hover:scale-110">
+        <img src="../src/img/Preview.png" class="w-22">
+        <div class="my-10 text-center">
+          <span class="font-light text-sm justify-center">Fernando</span>
+          <span class="font-light text-sm justify-center">Figueroa</span>
+        </div>
+
+
+      </div>
+
+
+      <div
+        class="flex flex-col p-8 rounded-xl bg-white shadow-xl max-w-96 md:w-auto transition duration-300 ease-in-out hover:scale-110 ">
+        <img src="../src/img/Preview(1).png" class="w-22">
+        <div class="my-10 text-center">
+          <span class="font-light text-sm justify-center">Diego</span>
+          <span class="font-light text-sm justify-center">Viana</span>
+        </div>
+
+
+      </div>
+
+
+      <div
+        class="flex flex-col p-8 rounded-xl bg-white shadow-xl max-w-96 md:w-auto transition duration-300 ease-in-out hover:scale-110">
+        <img src="../src/img/Preview(2).png" class="w-22">
+        <div class="my-10 text-center">
+          <span class="font-light text-sm justify-center">Ricardo</span>
+          <span class="font-light text-sm justify-center">López</span>
+        </div>
+
+
+      </div>
+
+      <div
+        class="flex flex-col p-8 rounded-xl bg-white shadow-xl max-w-96 md:w-auto transition duration-300 ease-in-out hover:scale-110">
+        <img src="../src/img/Cute Avatar.png" class="w-22">
+        <div class="my-10 text-center">
+          <span class="font-light text-sm justify-center">Pamela</span>
+          <span class="font-light text-sm justify-center">Gomez</span>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
   </section>
 
 
-    <footer class="text-gray-600 body-font bg-gray-700">
-      <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-        <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <img src="../src/img/Diseño sin título (2) 1.png" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-          </img>
-            <span class="ml-3 text-xl text-white">PoliFitness App</span>
-          </a>
-          <p class="mt-2 text-sm text-white p-2">Air plant banjo lyft occupy retro adaptogen indego Air plant banjo lyft occupy retro adaptogen indego</p>
-          <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-            <a class="text-gray-200">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-gray-200">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-gray-200">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-              </svg>
-            </a>
-          </span>
-        </div>
-        <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-bold text-white tracking-widest text-md mb-3">SOBRE NOSOTROS</h2>
-            <nav class="list-none mb-10">
-              <li>
-                <a class="text-white hover:text-red-300" href="#">PoliFitnes</a>
-              </li>
-              <li>
-                <a class="text-white hover:text-red-300" href="#">Funciones</a>
-              </li>
-              <li>
-                <a class="text-white hover:text-red-300" href="https://uca.edu.sv/">Universidad</a>
-              </li>
+  <footer class="flex flex-col justify-center items-center p-4 md:p-8 lg:p-10 py-20">
 
-            </nav>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-bold text-white tracking-widest text-md mb-3">COMPAÑÍA</h2>
-            <nav class="list-none mb-10">
-              <li>
-                <a class="text-white hover:text-red-300" href="#6">Quiénes somos</a>
-              </li>
-              <li>
-                <a class="text-white hover:text-red-300" href="#6">Nuestro equipo</a>
-              </li>
-            </nav>
-          </div>
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-bold text-white tracking-widest text-md mb-3">CONTACTANOS</h2>
-            <nav class="list-none mb-10">
-              <li>
-                <p class="text-white p-2" > Bulevar Los Próceres, </p>
-              </li>
-              <li>
-                <p class="text-white p-2">Antiguo Cuscatlán, La Libertad, El Salvador.</p>
-              </li>
-              <li>
-                <p class="text-white p-2">(503) 2210-6600</p>
-              </li>
-              <li>
-                <p class="text-white p-2">direccion.comunicaciones@uca.edu.sv</p>
-              </li>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div class="bg-gray-900">
-        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-          <p class="text-white text-sm text-center sm:text-left">© 2023 PoliFitness App —
-            <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-400 ml-1" target="_blank">@PoliFitness</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+    <div class="mx-auto max-w-screen-xl text-center">
 
+      <a href="#" class="flex gap-x-6 justify-center">
 
+        <img class="h-16 w-14" src="../src/img/uca.svg" alt="UCA logo">
+
+        <span class="font-semibold text-xl py-5">CentroDeportivo<span class=" text-primary"> App </span> </span>
+
+      </a>
+
+      <p class="my-6 text-gray-500 dark:text-gray-400"> CentroDeportivo App es una aplicación que combina noticias
+        deportivas de la UCA <br> con rutinas de bienestar físico para aquellos que deseen mejorar su condición. </p>
+      <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+        <li>
+          <p class="text-white p-2"> Bulevar Los Próceres, </p>
+        </li>
+        <li>
+          <p class="text-white p-2">Antiguo Cuscatlán, La Libertad, El Salvador.</p>
+        </li>
+        <li>
+          <p class="text-white p-2">(503) 2210-6600</p>
+        </li>
+        <li>
+          <p class="text-white p-2">direccion.comunicaciones@uca.edu.sv</p>
+        </li>
+      </ul>
+
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#"
+          class="hover:underline">CentroDeportivo App™.</a> <b>Todos los derechos reservados. </b></span>
+    </div>
+  </footer>
 
   <script src="https://unpkg.com/taos@1.0.3/dist/taos.js"></script>
 
