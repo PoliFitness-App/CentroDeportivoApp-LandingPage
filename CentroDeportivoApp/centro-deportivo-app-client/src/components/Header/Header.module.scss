@@ -1,0 +1,81 @@
+@import "../../variables";
+
+.Header {
+  padding: 3rem 3rem 3rem 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8rem;
+
+    span {
+      padding-top: 1rem;
+      color: $theme-black-color;
+      font-weight: bold;
+
+      &:nth-child(1) {
+        color: $theme-primary-color;
+        font-weight: bolder;
+      }
+    }
+
+  > div {
+    flex: 1 0 300px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .Title{
+    justify-content: center;
+  }
+
+  .Buttons {
+    justify-content: center;
+  }
+
+  figure {
+    width: 64px;
+    height: 64px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Header {
+    padding: 1rem 1rem 1rem 1rem;
+    gap: 2rem;
+
+    > div {
+      flex: 1 0 300px;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .Title{
+      justify-content: center;
+    }
+
+    .Buttons {
+      justify-content: center;
+    }
+
+    figure {
+      width: 64px;
+      height: 64px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}

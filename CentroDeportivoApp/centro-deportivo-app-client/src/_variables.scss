@@ -1,0 +1,31 @@
+$theme-primary-color: #034189;
+$theme-primary-light-color: lighten($theme-primary-color, 5);
+$theme-secondary-color: #565E71;
+$theme-accent-color: #00818A;
+$theme-dark-color: #fefbff;
+$theme-darkest-color: darken($theme-dark-color, 5);
+$theme-black-color: #000;
+$theme-primary-container-color: #D7E2FF;
+$theme-error-container-color: #FFDAD6;
+$theme-error-color: #BA1A1A;
+$theme-light-color: #DBEDF3;
+
+$theme-drop-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+@mixin tablet {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
