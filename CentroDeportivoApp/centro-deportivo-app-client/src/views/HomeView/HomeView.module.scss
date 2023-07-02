@@ -1,0 +1,41 @@
+
+@import "../../variables";
+
+.card-view-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 2rem;
+  gap: 10em;
+
+
+  .Add-card-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: sticky;
+    padding: 2rem;
+    top: 0;
+  }
+
+  @media screen and (max-width: 768px){
+
+    .Add-card-section{
+      position: relative;
+      align-self: flex-start;
+    }
+  }
+
+  .Row-Cards{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}

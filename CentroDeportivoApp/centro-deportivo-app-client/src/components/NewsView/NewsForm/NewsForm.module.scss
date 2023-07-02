@@ -1,0 +1,95 @@
+@import "../../../variables";
+
+.post-form-section {
+  min-width: 400px;
+  border: none;
+
+  border-radius: 12px;
+  background-color: #FFF;
+
+  box-shadow: $theme-drop-shadow;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: $theme-secondary-color;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 2rem;
+
+  .select{
+    height: 40px;
+    background: $theme-primary-container-color;
+    border-radius: 12px;
+    border: none;
+    padding: 0.5rem 0.5rem;
+
+    font-size: 12px;
+    font-family: Roboto, sans-serif;
+    line-height: 18px;
+
+    color: $theme-secondary-color;
+  }
+
+  form {
+    width: 100%;
+    max-width: 400px;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    color: $theme-secondary-color;
+
+    .desc{
+      height: 200px;
+    }
+
+    label {
+      color: $theme-secondary-color;
+      font-size: 12px;
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      input,
+      textarea {
+        padding: 0.4rem 0.5rem;
+        border-radius: 12px;
+
+        border: none;
+
+        color: $theme-secondary-color;
+        height: 40px;
+
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        resize: none;
+
+        background: $theme-primary-container-color;
+
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+          outline: 0.5px solid lighten($theme-secondary-color, 20);
+        }
+      }
+    }
+  }
+}

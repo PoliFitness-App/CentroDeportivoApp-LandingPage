@@ -1,0 +1,25 @@
+@import "../../variables";
+
+.Button {
+  padding: 0.7rem 1rem;
+
+  color: $theme-light-color;
+
+  background: $theme-primary-color;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: $theme-drop-shadow;
+
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+
+  &:hover:not(:disabled),
+  &:hover:not(:disabled) {
+    transform: scale(1.05);
+  }
+
+  &:disabled {
+    color: #bbb;
+    cursor: not-allowed;
+  }
+}

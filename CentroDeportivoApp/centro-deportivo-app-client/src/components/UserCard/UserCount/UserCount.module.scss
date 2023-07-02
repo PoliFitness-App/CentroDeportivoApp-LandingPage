@@ -1,0 +1,64 @@
+
+@import "../../../variables";
+.users-count{
+  display: flex;
+  flex-direction: row;
+  min-width: 350px;
+  min-height: 180px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+
+  padding: 1.5rem;
+  box-shadow: $theme-drop-shadow;
+  gap: 3rem;
+  background: $theme-primary-color;
+
+  h3{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    width: 120px;
+  }
+
+  .count{
+
+    font-size: 48px;
+    font-style: normal;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 96.94px;
+    height: 97.041px;
+    flex-shrink: 0;
+
+    border-radius: 97.041px;
+    background: $theme-light-color;
+
+  h1{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px;
+    color: $theme-primary-color;
+  }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .users-count{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 0;
+
+    h3{
+      width: 65%;
+    }
+  }
+}

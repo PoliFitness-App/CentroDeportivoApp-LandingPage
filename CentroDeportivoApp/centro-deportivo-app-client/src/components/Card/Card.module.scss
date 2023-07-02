@@ -1,0 +1,64 @@
+@import "../../variables";
+
+.card{
+  max-width: 350px;
+  border-radius: 12px;
+  background-color: #FFF;
+  box-shadow: $theme-drop-shadow;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-content{
+  padding: 1rem;
+  align-items: start;
+  gap: 1rem;
+}
+.image-content{
+  width: 350px;
+}
+.card-image{
+  height: 150px;
+  width: 100%;
+}
+.card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+.name{
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 16px;
+  color: #919094;
+  text-align: start;
+}
+.category{
+  font-size: 12px;
+  font-weight: lighter;
+  color: #919094;
+  text-align: end;
+}
+.button{
+  margin: 1rem;
+  padding: 0.5rem;
+  position: absolute;
+  align-self: end;
+  color: $theme-dark-color;
+  background: $theme-error-color ;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  color: $theme-black-color;
+  background: $theme-error-container-color ;
+}

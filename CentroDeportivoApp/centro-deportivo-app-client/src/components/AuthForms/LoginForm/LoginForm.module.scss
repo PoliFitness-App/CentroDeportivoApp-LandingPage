@@ -1,0 +1,108 @@
+@import '../../../variables';
+
+.container {
+  min-width: 400px;
+  min-height: 400px;
+
+  border: none;
+
+  border-radius: 12px;
+  background-color: #FFF;
+
+  box-shadow: $theme-drop-shadow;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: $theme-secondary-color;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.5rem;
+
+  padding: 2rem;
+
+  .image-content{
+    .card-image{
+      width: 100%;
+
+      .card-image{
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+  }
+  .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+  }
+
+  h3 {
+    font-family: Roboto, sans-serif;
+    font-size: 1.2rem;
+  }
+
+  form {
+    font-family: Roboto, sans-serif;
+    width: 100%;
+    max-width: 500px;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    label {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+
+      font-size: 12px;
+      gap: 0.25rem;
+
+      input,
+      textarea {
+        padding: 0.4rem 0.5rem;
+        border-radius: 12px;
+
+        border: none;
+
+        color: $theme-secondary-color;
+        height: 40px;
+
+        font-size: 12px;
+        font-family: Roboto, sans-serif;
+        font-style: normal;
+        font-weight: lighter;
+        line-height: 18px;
+        resize: none;
+
+        background: $theme-primary-container-color;
+
+        &:focus,
+        &:focus-visible,
+        &:focus-within {
+          outline: 0.5px solid lighten($theme-secondary-color, 20);
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-width: 300px;
+    min-height: 300px;
+  }
+}
